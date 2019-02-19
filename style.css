@@ -864,6 +864,19 @@ main.result{
   font-size:16px;
 }
 
+#question-tree .go-back{
+  position:relative;
+  z-index:3;
+}
+#question-tree .go-back>a{
+  color:#fff;
+  text-decoration:underline;
+  font-style:italic;
+}
+#question-tree .go-back>a:before{
+  content:"< ";
+}
+
 .report-button>span{
   display:inline-block;
   margin-left:15px;
