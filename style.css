@@ -630,13 +630,17 @@ main.results-list{
   color:#000;
 }
 .meta-btn.report-expand{
-  background-color:#002f6c;
+  background-color:#b3b3b3;
   border-radius:10px;
   height:30px;
   width:36px;
   vertical-align:middle;
   position:relative;
   margin-top:0;
+}
+.meta-btn.report-expand.collapsed,
+.meta-btn.report-expand.collapsed:focus{
+  background-color:#002f6c !important;
 }
 .meta-btn.report-expand:before{
   content:"[\2014]";
