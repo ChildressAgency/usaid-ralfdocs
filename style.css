@@ -876,6 +876,33 @@ main.result{
 #question-tree .go-back>a:before{
   content:"< ";
 }
+#question-tree .ralf-article{
+  text-align:left;
+}
+#question-tree article .activity-description *,
+#question-tree article .activity-conditions *{
+  font-size:16px;
+}
+#question-tree .report-button .btn-main{
+  font-size:16px;
+  padding:10px 30px;
+  margin-top:0px;
+}
+#question-tree .panel-default{
+  background-color:transparent;
+}
+#question-tree .panel-title a{
+  color:#fff;
+}
+#question-tree .article-handle{
+  color:#000;
+}
+#question-tree .sector-title,
+#question-tree .sector-title+h1{
+  position:relative;
+  z-index:3;
+  color:#fff;
+}
 
 .report-button>span{
   display:inline-block;
