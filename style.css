@@ -300,6 +300,7 @@ section{
   margin-right:auto;
   padding:25px;
   border-radius:50%;
+  position:relative;
 }
 .sector-icon img{
   -webkit-transition:all .3s ease;
@@ -308,8 +309,16 @@ section{
   width:100px;
   height:100px;
 }
+.sector-icon-med img{
+  position:absolute;
+  height:80px;
+  width:80px;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+}
 .sector-icon img:hover{
-  transform:scale(1.1);
+  transform:scale(1.1) translate(0%, 0%);
 }
 .sector-icon.sector-icon-small{
   display:inline-block;
@@ -323,6 +332,23 @@ section{
   height:40%;
   width:40%;
   border-radius:50%;
+}
+.sector-icon-title{
+  display:table;
+}
+.sector-icon-title>.sector-icon-med,
+.sector-icon-title>.sector-title{
+  display:table-cell;
+}
+.sector-icon-bg.sector-icon-med{
+  width:100px;
+  height:100px;
+  margin-right:100%;
+  padding:2px;
+}
+.sector-icon-title .sector-title{
+  vertical-align: middle;
+  padding-left: 15px;
 }
 .panel-title .sector-icon.sector-icon-small{
   float:left;
@@ -621,6 +647,7 @@ main.results-list{
 }
 .btn-sector{
   border-radius:10px;
+  background-color:#aaa;
 }
 .btn-activities,
 .btn-impacts{
